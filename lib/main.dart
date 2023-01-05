@@ -21,23 +21,10 @@ var logicalHeight = logicalScreenSize.height;
 
 bool pickedPoint = false;
 
-var points = [
-  Offset(-50, 50),
-  // trianleDots[0],
-  // trianleDots[1],
-  // trianleDots[2],
-];
+var points = [Offset(-50, 50),];
 
-var trianleDots = [
-  // Offset(logicalWidth / 2, logicalHeight / 4),
-  // Offset(50, logicalHeight - (logicalHeight / 4)),
-  // Offset(logicalWidth - 50, logicalHeight - (logicalHeight / 4))
-];
-/* points.add(Offset(logicalWidth / 2, logicalHeight / 4));
-      points.add(Offset(50, logicalHeight - (logicalHeight / 4)));
-      points
-          .add(Offset(logicalWidth - 50, logicalHeight - (logicalHeight / 4)));
-          */
+var trianleDots = [];
+
 List pointlist = [
   trianleDots[1],
   Offset(logicalWidth / 2, logicalHeight / 2),
@@ -75,9 +62,6 @@ class _MyHomePageState extends State<MyHomePage> {
     super.initState();
     setState(() {
       print("amongs");
-
-      // draw the first dot.
-// points.add(Offset(logicalWidth / 2, logicalHeight / 2));
     });
   }
 
@@ -197,8 +181,6 @@ class _MyHomePageState extends State<MyHomePage> {
       pointlist.add(Offset(logicalWidth / 2, logicalHeight / 2));
       index = 0;
     });
-
-    // drawNextDot();
   }
 }
 
